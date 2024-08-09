@@ -30,6 +30,19 @@ ext {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+
+    // mail
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+	implementation 'jakarta.mail:jakarta.mail-api:2.0.1'
+	runtimeOnly 'com.sun.mail:jakarta.mail:2.0.1'
+
+	// JSON 직렬화/역직렬화에 필요한 Jackson 의존성
+	implementation 'com.fasterxml.jackson.core:jackson-databind'
+	implementation 'com.fasterxml.jackson.core:jackson-core'
+	implementation 'com.fasterxml.jackson.core:jackson-annotations'
 
     /**
      * Spring boot 스타터 의존성
